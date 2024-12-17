@@ -2,8 +2,8 @@
 Customize your WordPress admin login logo easily.
 
 === Custom WP Admin Logo ===
-Contributors: afzalhameed
-Donate link: https://sparqitservices.com/donate
+Contributors: Afzal Hameed
+Donate link: https://buymeacoffee.com/iafzalhameed
 Tags: admin logo, login logo, custom logo, branding, white label
 Requires at least: 5.2
 Tested up to: 6.4
