@@ -1,5 +1,6 @@
 # custom-wp-admin-logo
 Customize your WordPress admin login logo easily.
+
 === Custom WP Admin Logo ===
 Contributors: afzalhameed
 Donate link: https://sparqitservices.com/donate
