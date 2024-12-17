@@ -1,0 +1,324 @@
+/* Admin Panel Styles */
+:root {
+    --cwal-primary-color: #2271b1;
+    --cwal-border-color: #dcdcde;
+    --cwal-background-color: #fff;
+    --cwal-text-color: #1d2327;
+    --cwal-success-color: #00a32a;
+    --cwal-error-color: #d63638;
+}
+
+/* Container Layout */
+.cwal-admin-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    max-width: 1200px;
+}
+
+.cwal-admin-main {
+    background: var(--cwal-background-color);
+    border: 1px solid var(--cwal-border-color);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+/* Form Groups */
+.cwal-form-group {
+    margin-bottom: 20px;
+}
+
+.cwal-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--cwal-text-color);
+}
+
+.cwal-input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cwal-input-group input[type="text"] {
+    flex: 1;
+}
+
+/* Preview Section */
+.cwal-preview {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f0f0f1;
+    border-radius: 4px;
+}
+
+.cwal-preview h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.cwal-preview-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background: var(--cwal-background-color);
+    border: 1px solid var(--cwal-border-color);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.cwal-preview-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sidebar */
+.cwal-admin-sidebar {
+    align-self: start;
+}
+
+.cwal-sidebar-box {
+    background: var(--cwal-background-color);
+    border: 1px solid var(--cwal-border-color);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.cwal-sidebar-box h3 {
+    margin-top: 0;
+    color: var(--cwal-text-color);
+}
+
+.cwal-sidebar-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.cwal-sidebar-box li {
+    margin-bottom: 8px;
+}
+
+/* Form Actions */
+.cwal-form-actions {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--cwal-border-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .cwal-admin-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cwal-input-group {
+        flex-direction: column;
+    }
+
+    .cwal-input-group input[type="text"] {
+        width: 100%;
+    }
+
+    .cwal-input-group button {
+        width: 100%;
+    }
+}
+
+/* Notifications */
+.notice {
+    margin: 20px 0;
+}
+
+/* Loading States */
+.updating-message::before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url(../images/spinner.gif) no-repeat;
+    background-size: 20px;
+    vertical-align: middle;
+}
+
+/* Helper Classes */
+.cwal-text-center {
+    text-align: center;
+}
+
+.cwal-mt-20 {
+    margin-top: 20px;
+}
+
+.cwal-mb-20 {
+    margin-bottom: 20px;
+}
+
+/* About Box Styles */
+.cwal-about-box {
+    margin-top: 20px;
+}
+
+.cwal-about-content {
+    color: #50575e;
+}
+
+.cwal-about-content p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.cwal-about-content strong {
+    display: inline-block;
+    min-width: 80px;
+    color: #1d2327;
+}
+
+.cwal-about-content a {
+    color: var(--cwal-primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.cwal-about-content a:hover {
+    color: #135e96;
+    text-decoration: underline;
+}
+
+.cwal-rating {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--cwal-border-color);
+}
+
+.cwal-rating .button {
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cwal-rating .button::before {
+    content: "★";
+    color: #ffb900;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .cwal-about-content strong {
+        display: block;
+        margin-bottom: 2px;
+    }
+}
+
+/* Enhanced Sidebar Styles */
+.cwal-sidebar-box {
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cwal-sidebar-box h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--cwal-border-color);
+    margin-bottom: 15px;
+}
+
+.cwal-sidebar-box h3 .dashicons {
+    color: var(--cwal-primary-color);
+}
+
+/* About Content Styles */
+.cwal-about-content p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.cwal-about-content .dashicons {
+    color: var(--cwal-primary-color);
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.cwal-about-content strong {
+    min-width: 80px;
+    color: #1d2327;
+}
+
+/* Support & Review Box Styles */
+.cwal-support-content {
+    text-align: center;
+}
+
+.cwal-action-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.cwal-action-buttons .button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cwal-donate {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid var(--cwal-border-color);
+}
+
+.cwal-donate .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Button Icons */
+.button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+}
+
+/* Star Rating Color */
+.dashicons-star-filled {
+    color: #ffb900;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+    .cwal-action-buttons {
+        flex-direction: column;
+    }
+    
+    .cwal-about-content p {
+        flex-wrap: wrap;
+    }
+    
+    .cwal-about-content strong {
+        min-width: 100%;
+    }
+}
+
+/* Hover Effects */
+.cwal-sidebar-box a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.button:hover .dashicons {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
