@@ -63,6 +63,6 @@ Initial release of the plugin.
 
 == Support ==
 
-For support please visit [Sparq IT Services Support](https://sparqitservices.com/support)
+For support please visit [Sparq IT Services Support](https://buymeacoffee.com/iafzalhameed)
 
 Developed with ♥ by Sparq IT Services
